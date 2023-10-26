@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Janelas</title>
+    <title>Proj modal</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
 </head>
 
 <body>
-    <h1> Janela Modal</h1>
 
-    <!-- botão de abrir: -->
-    <button id="abrir-janela">Abrir</button>
-    <!-- fundo da janela: -->
-    <div id="fundo"></div>
-    <!-- janela: -->
-    <div id="modal">
-        <!-- cabeçalho da janela, com botão de fechar. -->
-        <div id="janela-header">
-            <h2>Essa é minha janela</h2>
-            <button id="fechar-janela">Fechar</button>
+    <div class=" titulo">
+        <h1>This is a page with data about me</h1>
+        <p>Click open for more information</p>
+    </div>
+
+    <button id="open-modal">Open</button>
+    <div id="fade" class="hide"></div>
+
+    <div id="modal" class="id">
+        <div id="modal-header">
+            <h2>About me</h2>
+            <button id="close-modal">Close</button>
         </div>
-        <!-- Corpo da janela: -->
-        <div id="janela-body">
-            <p>Uma vez flamengo, sempre flamengo, flamengo sempre eu ei de ser. É o meu maior prazer, vê-lo brilhar,
-                seja na terra, seja no mar<br>
-                vencer, vencer, vencer...
-            </p>
-            <p>Uma vez flamengo, sempre flamengo, flamengo sempre eu ei de ser. É o meu maior prazer, vê-lo brilhar,
-                seja na terra, seja no mar<br>
-                vencer, vencer, vencer...
+        <div id="modal-body">
+            <p>
+                My name is Luis Felipe, I'm nineteen years old, I'm Brazilian, I live in the state of Maranhão, in the
+                city of Timon.
+                I'm currently studying Information Systems, I'm in the first period and in my spare time I dedicate
+                myself to web development.
+                I intend to become a programmer in the future, I hope I can get there.
             </p>
         </div>
     </div>
