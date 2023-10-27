@@ -1,0 +1,241 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color:#b366ff;
+}
+
+h1{
+    text-align: center;
+    margin: 60px ;
+    color:white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px 0;
+    color: white;
+    font-size: 20px;
+}
+button{
+    background-color:red;
+    padding: 5px 10px;
+    border-radius:10px;
+    font-size: 1rem;
+    font-weight:bold;
+    cursor:pointer;
+    opacity: 0.8;
+    transition: .5s; 
+}
+
+#open-modal{
+    background-color: lightgreen;
+}
+
+button:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* definindo que quando a opacidade for igual a 1, os eventos de click irão funcionar para o modal e o fundo. */
+#modal,
+#fade{
+    opacity:1;
+    pointer-events: all;
+    transition: 0.5s;
+}
+
+#fade{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6); /* Dando cor e opacidade ao fundo.*/
+    z-index: 5; /* Fazendo com que o fundo fique acima dos outros elem da pag(Ocultando eles). */
+}
+
+
+#modal{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); /* Posisionado modal ao centro*/   
+    background-color:#cc99ff;
+    z-index:10;
+    color:white;
+    width:600px;
+    max-width: 90%; /* Responsividade para telas com menos de 600px.*/ 
+    padding:20px 35px;   
+    border-radius:10px;
+}
+
+h2{
+text-align: center;
+font-weight: bold;
+font-family: monospace;
+font-size:1.5rem;
+color:#1a0333;
+}
+
+#modal-header{
+    display:flex;
+    justify-content:space-between;
+align-items: center;   
+    border-bottom:1px solid black;
+    padding-bottom:5px;
+    margin-bottom:12px;
+}
+
+p{
+    color: #1a0333;
+    font-size:20px;
+}
+
+
+#fade.hide,
+#modal.hide{
+    opacity: 0;
+    pointer-events: none;  /* Definindo que quando a opacidade do fundo e modal for 0 os eventos de clique não funcionem.*/
+}
+
+#modal.hide{
+    top:0; /* Dando ponto de partida a transição do modal. Anteriormente foi dado 50% de valor ao top*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
