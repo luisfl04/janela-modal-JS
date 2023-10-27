@@ -46,9 +46,9 @@ button:hover{
 /* definindo que quando a opacidade for igual a 1, os eventos de click irão funcionar para o modal e o fundo. */
 #modal,
 #fade{
+    transition: 0.5s;
     opacity:1;
     pointer-events: all;
-    transition: 0.5s;
 }
 
 #fade{
